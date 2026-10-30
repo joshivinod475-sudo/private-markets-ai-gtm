@@ -1,0 +1,62 @@
+# Account-based GTM for an AI-agents-for-private-markets product.
+# "Acme Agents" is a placeholder: set your product's name and facts here.
+
+product:
+  name: Acme Agents
+  one_liner: "AI agents for private markets teams, from deal sourcing and diligence to portfolio monitoring and exit"
+  proof_points:
+    - "SOC 2 Type II certified"
+    - "Trained on the firm's own investment thesis"
+  call_to_action: "Open to a 20-minute demo on your current thesis?"
+  sender_name: "Vinod"
+
+# Step 1: which firms to target (Apollo organization search, no credits)
+apollo_accounts:
+  q_organization_keyword_tags: ["private equity"]
+  organization_locations: ["United States"]
+  organization_num_employees_ranges: ["11,50", "51,200", "201,500"]
+  per_page: 25
+
+# Step 2: account scoring. Accounts below min_score are skipped.
+scoring:
+  min_score: 60
+
+# Step 3: who to contact at each firm, and which agent to pitch them.
+# A contact is matched to the persona with the longest matching title.
+contacts_per_account: 3
+personas:
+  - name: Deal team leadership
+    titles: [Managing Partner, Managing Director, Partner, Principal]
+    agent: Deal Sourcing Agent
+    pain: "seeing the right targets before they reach a banker-run process"
+  - name: Deal execution
+    titles: [Vice President, Senior Associate, Associate]
+    agent: Diligence Agent
+    pain: "the hours between receiving a CIM and a first IC memo"
+  - name: Portfolio operations
+    titles: [Operating Partner, Head of Portfolio Operations, Value Creation]
+    agent: Portfolio Monitoring Agent
+    pain: "tracking plan vs. actual and bolt-on pipelines across the portfolio"
+  - name: Business development
+    titles: [Head of Business Development, Director of Business Development, Head of Origination]
+    agent: Deal Sourcing Agent
+    pain: "covering more of the market without adding headcount"
+  - name: Technology and AI
+    titles: [Chief Technology Officer, CTO, Head of Data, Head of AI, Chief Data Officer]
+    agent: Secure AI platform
+    pain: "rolling out AI across deal teams without security or data-control risk"
+
+# Saleshandy prospect field IDs (see README). Create custom fields
+# first_line, agent_pitch and firm_insight in Saleshandy first.
+saleshandy:
+  field_ids:
+    first_name: ""
+    last_name: ""
+    email: ""
+    company: ""
+    job_title: ""
+    first_line: ""
+    agent_pitch: ""
+    firm_insight: ""
+  conflict_action: noUpdate
+  verify_prospects: true

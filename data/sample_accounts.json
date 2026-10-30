@@ -1,0 +1,60 @@
+[
+  {
+    "brief": {
+      "firm_name": "Harborline Capital Partners",
+      "website": "https://harborline.example",
+      "segment": "private_equity",
+      "strategy": "Lower middle-market buyout",
+      "sectors": ["Business services", "Healthcare services", "Industrial technology"],
+      "check_size": "$15M-$60M equity",
+      "fund_info": "Fund III, $420M (fictional)",
+      "recent_signals": [
+        {"kind": "Fund close", "summary": "Closed Fund III above its target.", "date": "2026-03", "source_url": "https://harborline.example/news/fund-iii"},
+        {"kind": "New platform", "summary": "Acquired a regional outpatient physical therapy group.", "date": "2026-06", "source_url": "https://harborline.example/news/pt-platform"},
+        {"kind": "Key hire", "summary": "Hired a Head of Data to build sourcing infrastructure.", "date": "2026-08", "source_url": "https://harborline.example/team"}
+      ],
+      "fit_score": 85,
+      "fit_reasons": [
+        "Fresh fund means pressure to deploy capital in the next 24 months",
+        "Buy-and-build healthcare strategy needs a steady pipeline of add-on targets",
+        "New Head of Data signals appetite for systematic sourcing"
+      ],
+      "recommended_agents": ["Deal Sourcing Agent", "Portfolio Monitoring Agent"],
+      "angle": "Congrats on closing Fund III; with a new PT platform, the add-on pipeline is probably the bottleneck now.",
+      "caveats": ["Fictional sample account for the demo"]
+    },
+    "contacts": [
+      {"first_name": "Dana", "last_name": "Whitfield", "email": "dana@harborline.example", "title": "Managing Partner"},
+      {"first_name": "Marcus", "last_name": "Hale", "email": "marcus@harborline.example", "title": "Senior Associate"},
+      {"first_name": "Rina", "last_name": "Cho", "email": "rina@harborline.example", "title": "Head of Data"},
+      {"first_name": "Tom", "last_name": "Baker", "email": "tom@harborline.example", "title": "Partner"}
+    ]
+  },
+  {
+    "brief": {
+      "firm_name": "Summit Ridge Equity",
+      "website": "https://summitridge.example",
+      "segment": "private_equity",
+      "strategy": "Growth equity",
+      "sectors": ["Vertical SaaS", "Fintech infrastructure"],
+      "check_size": "$10M-$40M",
+      "fund_info": "",
+      "recent_signals": [
+        {"kind": "Exit", "summary": "Sold a payments software company to a strategic buyer.", "date": "2026-05", "source_url": "https://summitridge.example/news/exit"}
+      ],
+      "fit_score": 70,
+      "fit_reasons": [
+        "Recent exit returns capital and frees the team to look for new deals",
+        "Thesis-driven vertical SaaS focus suits systematic market mapping"
+      ],
+      "recommended_agents": ["Deal Sourcing Agent", "Diligence Agent"],
+      "angle": "After the payments exit, the team is likely mapping the next vertical SaaS platform.",
+      "caveats": ["Fictional sample account for the demo", "Fund size not public"]
+    },
+    "contacts": [
+      {"first_name": "Leah", "last_name": "Moreno", "email": "leah@summitridge.example", "title": "Operating Partner"},
+      {"first_name": "Ben", "last_name": "Adler", "email": "ben@summitridge.example", "title": "Vice President"},
+      {"first_name": "Chris", "last_name": "Ng", "email": "chris@summitridge.example", "title": "Executive Assistant"}
+    ]
+  }
+]
